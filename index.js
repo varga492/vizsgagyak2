@@ -64,6 +64,9 @@ const headerComponent = (logo) => {
             ${logo}
         </div>
         <div>
+          <span class="material-symbols-outlined">
+            menu
+          </span>
         </div>
    </header>
     `;
@@ -73,17 +76,21 @@ const cardComponent = (id, title, sub, text, button) => {
   return `
         <div class="card">
             <span>${id}</span>
-            <p>${title}</p>
-            <p>${sub}</p>
-            <p>${text}</p>
-            <button>${button}</button>
+            <div class="text-flex">
+              <p class='title'>${title}</p>
+              <p class='sub' >${sub}</p>
+              <p class='text' >${text}</p>
+            </div>   
+            <button>${button}<span class="material-symbols-outlined">
+            arrow_forward
+            </span></button>
         </div>   
     `;
 };
 
 function init() {
   const root = document.getElementById("root");
-  root.insertAdjacentHTML("afterbegin", headerComponent(beers.logo));
+  root.insertAdjacentHTML("beforebegin", headerComponent(beers.logo));
   root.insertAdjacentHTML(
     "beforeend",
     beers.cards
