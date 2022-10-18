@@ -4,6 +4,8 @@ body{
 }
 
 header{
+    position: sticky;
+    top: 0;
     color: #145434;
     width: 100%;
     height: 60px;
@@ -13,6 +15,8 @@ header{
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid #145434;
+    z-index: 40;
+    background-color: #ffeedf;
 }
 .material-symbols-outlined {
     font-size: 36px;
@@ -42,6 +46,7 @@ header{
     color: #ffeedf;
     box-sizing: border-box;
     padding: 30px;
+
 }
 
 .card > span{
