@@ -107,14 +107,19 @@ button>span{
     display: block;
     position: absolute;
     width: 36px;
-    transform: translate(100%, -30%);
+    transform: translate(100%, -25%);
     color: #145434;
 }
 
 button:hover{
     background-color: #145434;
-    color: #145434;
+    color: #ffeedf;
 }
+
+button:hover >span{
+    color: #ffeedf;
+}
+
 
 .material-symbols-outlined {
   font-variation-settings:
