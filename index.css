@@ -71,7 +71,6 @@ header{
 
 .title{
     height: 80px;
-
     padding: 10px 0;
     line-height: 40px;
     font-size: 36px;
@@ -138,6 +137,16 @@ button:hover >span{
     button{
         position: absolute;
         right: 245px;
+    }
+    .title{
+        margin-bottom: 25px;
+        line-height: 36px;
+        padding-top: 0;
+        padding-bottom: 36px;
+    }
+    
 
+    .sub{
+        margin-top: -15px;
     }
 }
