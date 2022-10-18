@@ -112,7 +112,8 @@ button>span{
 }
 
 button:hover{
-    background-color: black;
+    background-color: #145434;
+    color: #145434;
 }
 
 .material-symbols-outlined {
